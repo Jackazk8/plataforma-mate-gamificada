@@ -1,0 +1,195 @@
+.game-bg {
+    background-color: #1a252f;
+    background-image: 
+        radial-gradient(#2c3e50 15%, transparent 16%),
+        radial-gradient(#2c3e50 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', monospace, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.character-newton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+}
+
+.sprite-placeholder {
+    font-size: 4rem;
+    background: #2c3e50;
+    border: 4px solid #ffffff;
+    padding: 1rem;
+    box-shadow: 4px 4px 0px #000;
+}
+
+.mentor-badge {
+    background: #f1c40f;
+    color: #000;
+    font-size: 0.5rem;
+    padding: 4px 6px;
+    text-align: center;
+    border: 2px solid #000;
+    margin-top: 6px;
+    box-shadow: 2px 2px 0px #000;
+    font-weight: bold;
+}
+
+.dialog-scroll {
+    background: #f3e5ab;
+    border: 4px solid #5c3a21;
+    box-shadow: 6px 6px 0px #000000;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 280px;
+    color: #2b1d0c;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #5c3a21;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dialog-header h2 {
+    font-size: 0.75rem;
+    color: #5c3a21;
+    margin: 0;
+}
+
+.dialog-text p {
+    font-size: 0.65rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.btn-option {
+    background: #e5d396;
+    border: 3px solid #5c3a21;
+    color: #2b1d0c;
+    padding: 0.8rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    text-align: left;
+    transition: all 0.1s;
+}
+
+.btn-option:hover {
+    background: #f1c40f;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.action-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 160px;
+}
+
+.status-badge {
+    background: #111;
+    color: #2ecc71;
+    border: 2px solid #ffffff;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 3px 3px 0px #000;
+}
+
+.btn-action {
+    border: 3px solid #000000;
+    padding: 0.7rem 0.5rem;
+    font-size: 0.55rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000000;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.btn-action.help { background: #3498db; color: #fff; }
+.btn-action.flee { background: #e74c3c; color: #fff; }
+
+.btn-action:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.game-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0f141d;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 0.55rem;
+    border-top: 2px solid #ffffff;
+    color: #f1c40f;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.hidden { display: none; }
+
+.modal-content {
+    background: #f3e5ab;
+    border: 4px solid #5c3a21;
+    padding: 2rem;
+    max-width: 480px;
+    width: 90%;
+    color: #2b1d0c;
+    box-shadow: 8px 8px 0px #000;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: #8e44ad;
+}
+
+.modal-content p {
+    font-size: 0.6rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
